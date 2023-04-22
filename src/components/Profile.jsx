@@ -1,11 +1,12 @@
-export default function Profile() {
+export default function Profile({image, name, title, isNew}) {
 	return (
 		<div className="profile">
 			<figure className="photo">
-				<img src="./src/images/jmju.JPG" alt="" />
+				<img src={image} alt="avatar" />
+				{isNew && <span className="profile__badge">NEW</span>}
 			</figure>
-			<span>minju</span>
-			<p>d</p>
+			<span>{name}</span>
+			<p>{title}</p>
 		</div>
 	)
 }

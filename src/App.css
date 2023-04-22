@@ -1,11 +1,24 @@
 .profile {
+  position: relative;
   width: 300px;
-  text-align: center;
+  margin: 10px;
   padding: 20px;
   background: #ebebeb;
+  border-radius: 20px;
+  text-align: center;
+}
+.profile__badge {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 80px;
+  line-height: 30px;
+  padding: 5px;
+  background: yellow;
+  border-radius: 4px;
 }
 
-.photo {
+.photo img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
