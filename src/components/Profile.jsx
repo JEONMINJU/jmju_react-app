@@ -1,10 +1,10 @@
+import React from "react";
+import Avartar from './Avartar';
+
 export default function Profile({image, name, title, isNew}) {
 	return (
 		<div className="profile">
-			<figure className="photo">
-				<img src={image} alt="avatar" />
-				{isNew && <span className="profile__badge">NEW</span>}
-			</figure>
+			<Avartar image={image} isNew={isNew}/>
 			<span>{name}</span>
 			<p>{title}</p>
 		</div>
