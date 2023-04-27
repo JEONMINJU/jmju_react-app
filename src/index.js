@@ -4,14 +4,16 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 // import AppProfile from './AppProfile';
 // import AppCounter from './AppCounter';
-import AppProducts from './AppProducts';
+// import AppProducts from './AppProducts';
+import AppXY from './AppXY';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <AppProfile /> */}
     {/* <AppCounter /> */}
-    <AppProducts />
+    {/* <AppProducts /> */}
+    <AppXY />
   </React.StrictMode>
 );
 
