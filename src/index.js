@@ -6,7 +6,8 @@ import reportWebVitals from './reportWebVitals';
 // import AppCounter from './AppCounter';
 // import AppProducts from './AppProducts';
 // import AppXY from './AppXY';
-import AppMentor from './AppMentor';
+// import AppMentor from './AppMentor';
+import AppMentors from './AppMentors';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +16,8 @@ root.render(
     {/* <AppCounter /> */}
     {/* <AppProducts /> */}
     {/* <AppXY /> 마우스 따라가기 */}
-    <AppMentor /> {/* 중접객체 상태관리 */}
+    {/* <AppMentor /> 중접객체 상태관리 */}
+    <AppMentors />
   </React.StrictMode>
 );
 
