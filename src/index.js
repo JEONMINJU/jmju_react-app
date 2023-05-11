@@ -8,7 +8,8 @@ import reportWebVitals from './reportWebVitals';
 // import AppXY from './AppXY';
 // import AppMentor from './AppMentor';
 // import AppMentors from './AppMentors';
-import AppWrap from './AppWrap';
+// import AppWrap from './AppWrap';
+import AppCard from './components/AppCard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,7 +19,8 @@ root.render(
     {/* <AppProducts /> */}
     {/* <AppXY /> 마우스 따라가기 */}
     {/* <AppMentor /> 중접객체 상태관리 */}
-    <AppWrap />
+    {/* <AppWrap /> 컴포넌트 재사용 */}
+    <AppCard />
   </React.StrictMode>
 );
 
