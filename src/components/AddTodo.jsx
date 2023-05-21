@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function AddTodo({onAdd}) { // onAdd 를 프롭으로 받고
 	const [text, setText] = useState(''); // 초기는 빈값으로
@@ -6,7 +7,7 @@ export default function AddTodo({onAdd}) { // onAdd 를 프롭으로 받고
 	const handleSubmit = (e) => {
 		if(text.trim().length === 0) return;
 		e.preventDefault(); // page refesh 막기
-		onAdd({id:'idx', text: text, status: 'active'});
+		onAdd({id: uuidv4(), text: text, status: 'active'});
 		setText(''); // 입력 후 인풋 초기화
 	}
 	return (
