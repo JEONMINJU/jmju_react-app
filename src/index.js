@@ -1,7 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import "./styles.css";
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import TodoIndex from './container/todo/TodoIndex';
 // import AppProfile from './AppProfile';
 // import AppCounter from './AppCounter';
 // import AppProducts from './AppProducts';
@@ -10,7 +21,17 @@ import reportWebVitals from './reportWebVitals';
 // import AppMentors from './AppMentors';
 // import AppWrap from './AppWrap';
 // import AppCard from './components/AppCard';
-import App from './App';
+// import App from './App';
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div>Hello world!</div>,
+  },
+  {
+    path: "/todos",
+    element: <TodoIndex />,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,7 +43,8 @@ root.render(
     {/* <AppMentor /> 중접객체 상태관리 */}
     {/* <AppWrap /> 컴포넌트 재사용 */}
     {/* <AppCard /> */}
-    <App/>
+    {/* <App/> */}
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
