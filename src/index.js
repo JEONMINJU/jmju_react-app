@@ -10,7 +10,7 @@ import reportWebVitals from './reportWebVitals';
 // import AppMentors from './AppMentors';
 // import AppWrap from './AppWrap';
 // import AppCard from './components/AppCard';
-import TodoList from './components/TodoList';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,7 +22,7 @@ root.render(
     {/* <AppMentor /> 중접객체 상태관리 */}
     {/* <AppWrap /> 컴포넌트 재사용 */}
     {/* <AppCard /> */}
-    <TodoList />
+    <App/>
   </React.StrictMode>
 );
 
